@@ -10,8 +10,7 @@ A Python script for **Epigenome-Wide Association Study (EWAS)** using bacterial 
 .
 ├── ewas_analysis.py      # Main analysis script
 ├── README.md             # This help documentation
-├── data/                 # Example input files (optional)
-└── output/               # Output directory for PLINK files
+└── data/                 # Example input files (optional)
 ```
 
 ---
@@ -97,9 +96,9 @@ python ewas_analysis.py \
 
 ### `methy_info` CSV (example columns)
 
-| Gene_ID | Site | ... | Methylated_Strain_List |
-|---------|------|-----|-------------------------|
-| 00001   | 125  | ... | strainA,strainC,...     |
+| Gene_ID | Site | Motif count |Methylation count| Strain count|Overlapping info|Length|Methylated_Strain_List |
+|---------|------|-----|---|--|-|---|----------------------|
+| 00001   | 125  | 80|60|84|0 |1000| strainA,strainC,...     |
 
 ### `gene_info` CSV
 
@@ -117,16 +116,4 @@ strainF
 
 ---
 
-##  License
 
-This project is released under the MIT License. See [LICENSE](LICENSE) for details.
-
----
-
-
-
-
-## ✉️ Contact
-
-For questions or feedback, please contact:  
-📧 `your_email@example.com`
