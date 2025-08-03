@@ -4,7 +4,7 @@ A Python script for **Epigenome-Wide Association Study (EWAS)** using bacterial 
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 .
@@ -16,7 +16,7 @@ A Python script for **Epigenome-Wide Association Study (EWAS)** using bacterial 
 
 ---
 
-## ⚙️ Requirements
+## Requirements
 
 - Python 3.6+
 - Dependencies:
@@ -59,7 +59,7 @@ python ewas_analysis.py <index> <gene_index> <out> <methy_info> <gene_info> <cla
 
 ---
 
-## 📂 Output Files
+##  Output Files
 
 | File              | Description                                                                          |
 |-------------------|--------------------------------------------------------------------------------------|
@@ -72,12 +72,12 @@ python ewas_analysis.py <index> <gene_index> <out> <methy_info> <gene_info> <cla
 
 ```bash
 python ewas_analysis.py \
-    strain_index.txt \
-    gene_index.txt \
+    strain_index.csv \
+    gene_index.csv \
     output/ \
     methylation_data.csv \
     gene_annotation.csv \
-    fit_strains.txt \
+    fit_strains.csv \
     --methy_name 6mA \
     --methy_type complete \
     --gene_type G
@@ -103,9 +103,9 @@ python ewas_analysis.py \
 
 ### `gene_info` CSV
 
-| Gene     | start | length |
-|----------|-------|--------|
-| G_00001  | 1000  | 500    |
+| Gene     | start | end |  length  |
+|----------|-------|--------|----|
+| G_00001  | 1000  | 1500    |    500|
 
 ### `classA` (TXT)
 
