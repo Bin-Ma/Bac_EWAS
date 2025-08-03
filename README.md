@@ -43,7 +43,7 @@ python ewas_analysis.py <index> <gene_index> <out> <methy_info> <gene_info> <cla
 | `gene_index`   | Gene index file (used to remove `.fa` suffixes).                            |
 | `out`          | Output prefix or directory for results.                                     |
 | `methy_info`   | Methylation site data (CSV) with per-strain methylation status in column 8. |
-| `gene_info`    | Gene annotation table with columns: `Gene`, `start`, `length`.              |
+| `gene_info`    | Gene annotation table with columns: `Gene`, `start`,`end`, `length`.              |
 | `classA`       | List of strain names adapted to the environment (treated as fitness = 1).   |
 
 ---
